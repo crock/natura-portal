@@ -1,0 +1,91 @@
+body {
+	background: black;
+}
+
+video {
+	position: fixed;
+	min-width: 100%;
+	min-height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.lead {
+	color: white;
+	margin-bottom: 0;
+}
+
+#vote #votingmenu {
+	display: none;
+}
+
+#vote:hover #votingmenu {
+	display: block;
+}
+
+#votingmenu {
+	width: 100%;
+	height: 0px;
+	background: url("../images/bamboobg.jpg");
+	/*border-bottom: 3px solid rgba(103, 103, 103, 0.50);*/
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-top: 0;
+	padding-top: 0;
+	overflow-x: auto;
+	white-space: nowrap;
+	z-index: 10; 
+}
+
+#votingmenu ul {
+	list-style-type: none;
+	line-height: 200px;
+	text-align: center;
+}
+
+#votingmenu ul li {
+	padding: 0 25px;
+	display: inline-block;
+}
+
+#votingmenu ul li a {
+	padding: 50px 25px;
+	background: white;
+	border-radius: 15px;
+	border: 2px solid rgba(103, 103, 103, 0.50);
+}
+
+#votingmenu ul li a:hover {
+	background: #bcbcbc;
+	color: white;
+}
+
+#vote_menu_tab {
+	background: rgba(135, 135, 135, 0.50);
+	height: 40px;
+	line-height: 40px;
+	width: 200px;
+	text-align: center;
+	font-size: 1.5em;
+	border-left: 3px solid rgba(103, 103, 103, 0.50);
+	border-right: 3px solid rgba(103, 103, 103, 0.50);
+	border-bottom: 3px solid rgba(103, 103, 103, 0.50);
+	border-bottom-right-radius:25px;
+	border-bottom-left-radius:25px;
+	color: rgba(103, 103, 103, 1.0);
+}
+
+#server {
+	margin: 25px auto 50px auto;
+}
+
+#server h4 {
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 18pt;
+	color: white;
+	margin: 0;
+}
+
