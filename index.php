@@ -57,71 +57,29 @@
 
         <nav class="row text-center">
             <div class="col-sm-3 feature">
-                <a href="#" data-toggle="modal" data-target="#socialmenu"><img src="" class="hatch" width="150" height="150" alt="social"></a>
-
+                <a href="#"><img src="images/leaf.png" class="hatch" width="150" height="150" alt="social"></a>
                 <p class="lead">Social</p>
             </div>
 
             <div class="col-sm-3 feature">
-                <a href="#"><img src="" class="hatch" width="150" height="150" alt="shop"></a>
+                <a href="#"><img src="images/flower.png" class="hatch" width="150" height="150" alt="shop"></a>
 
                 <p class="lead">Shop</p>
             </div>
 
             <div class="col-sm-3 feature">
-                <a href="#"><img src="" class="hatch" width="150" height="150" alt="forum"></a>
+                <a href="#"><img src="images/bee.png" class="hatch" width="150" height="150" alt="forum"></a>
 
                 <p class="lead">Forum</p>
             </div>
 
             <div class="col-sm-3 feature">
-                <a href="#"><img src="" class="hatch" width="150" height="150" alt="support"></a>
+                <a href="#"><img src="images/snowman.png" class="hatch" width="150" height="150" alt="support"></a>
 
                 <p class="lead">Support</p>
             </div>
         </nav>
 
-        <div id="socialmenu" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
-                        <h4 class="modal-title" id="gridSystemModalLabel">Connect with us!</h4>
-                    </div>
-
-                    <div class="modal-body">
-                        <div id="fb-ig" class="row text-center center-block">
-                            <div class="col-sm-3 feature">
-                                <a href="#"><img src="images/social/fb.png" class="hatch" width="150" height="150" alt="facebook"></a>
-
-                                <p class="lead">Facebook</p>
-                            </div>
-
-                            <div class="col-sm-3 feature">
-                                <a href="#"><img src="images/social/ig.png" class="hatch" width="150" height="150" alt="instagram"></a>
-
-                                <p class="lead">Instagram</p>
-                            </div>
-                        </div>
-
-                        <div id="tw-yt" class="row text-center center-block">
-                            <div class="col-sm-3 feature">
-                                <a href="#"><img src="images/social/tw.png" class="hatch" width="150" height="150" alt="twitter"></a>
-
-                                <p class="lead">Twitter</p>
-                            </div>
-
-                            <div class="col-sm-3 feature">
-                                <a href="#"><img src="images/social/yt.png" class="hatch" width="150" height="150" alt="youtube"></a>
-
-                                <p class="lead">YouTube</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 		<div id="server" class="center-block text-center">
 			<p class="lead">Server IP:</p>
