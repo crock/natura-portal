@@ -24,7 +24,6 @@ $f = file("configs/voting_sites.txt", FILE_IGNORE_NEW_LINES);
 
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/animations.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -59,7 +58,7 @@ $f = file("configs/voting_sites.txt", FILE_IGNORE_NEW_LINES);
 	    </div>
 	    
 	    <div id="vote_menu_tab" class="center-block">
-	        Voting <i class="fa fa-caret-down"></i> Menu
+	        Voting ▾ Menu
 	    </div>
 	</div>
 
