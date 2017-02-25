@@ -1,0 +1,146 @@
+body {
+	background:black;
+	font-size: 16px;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover {
+	color: #dedede;
+}
+
+video {
+	position: fixed;
+	min-width: 100%;
+	min-height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+#vote #votingmenu {
+	display: none;
+}
+
+#vote:hover #votingmenu {
+	display: block;
+}
+
+#votingmenu {
+	width: 100%;
+	height: 0px;
+	background: url("../images/leaves_bg.png") repeat-x;
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-top: 0;
+	padding-top: 0;
+	overflow-x: auto;
+	white-space: nowrap;
+	z-index: 10; 
+}
+
+#votingmenu ul {
+	list-style-type: none;
+	line-height: 200px;
+	text-align: center;
+}
+
+#votingmenu ul li {
+	padding: 0 25px;
+	display: inline-block;
+}
+
+.votebtn {
+	margin-top: 10px;
+	width: 90px;
+	height: 122px;
+	background: url(../images/votebtn.jpg) no-repeat;
+}
+
+#votingmenu ul li a:hover > div {
+	background: url(../images/votebtn_hover.jpg) no-repeat;
+}
+
+#vote_menu_tab {
+	background: rgba(135, 135, 135, 0.30);
+	height: 40px;
+	line-height: 40px;
+	width: 200px;
+	text-align: center;
+	font-size: 1.5em;
+	border-radius: 25px;
+	color: #2D6D5A;
+	margin-top: 25px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header, nav {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+
+	.logo {
+		margin: 50px 0;
+		width: 75%;
+	}
+}
+
+.feature a img {
+	display: block;
+}
+
+.feature a p {
+	display: block;
+	text-align: center;
+	font-size: 1.2rem;
+	padding: 10px;
+}
+
+.status {
+	margin: 50px;
+	text-align: center;
+}
+
+.status p {
+	font-size: 1.5rem;
+}
+
+.status .pcount,.sip {
+	font-weight: bold;
+}
+
+.online {
+	color: green;
+}
+
+.offline {
+	color: red;
+}
+
+.btn {
+	background: #2D6D5A;
+	width: 175px;
+	height: 50px;
+	color: #fff;
+	border-radius: 10px;
+	border: none;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	margin-top: 25px;
+}
+
+@media screen and (max-width: 600px) {
+	.logo {
+		width: 100%;
+	}
+}
