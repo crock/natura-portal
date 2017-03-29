@@ -2,6 +2,13 @@
 <?php 
 
 $f = file("configs/voting_sites.txt", FILE_IGNORE_NEW_LINES);
+$a = file("configs/portal_links.txt", FILE_IGNORE_NEW_LINES);
+$array = [];
+
+foreach ($a as $item) {
+    $separated = explode(",",$item);
+    array_push($array, $separated);
+}
 
 ?>
 <!DOCTYPE html>
@@ -57,7 +64,7 @@ $f = file("configs/voting_sites.txt", FILE_IGNORE_NEW_LINES);
 	        </ul>
 	    </div>
 	    
-	    <div id="vote_menu_tab" class="center-block">
+	    <div id="vote_menu_tab">
 	        Voting ▾ Menu
 	    </div>
 	</div>
@@ -69,33 +76,14 @@ $f = file("configs/voting_sites.txt", FILE_IGNORE_NEW_LINES);
         </header>
 
         <nav>
+            <?php for ( $i = 0 ; $i < count($array) ; $i++ ) { ?>
             <div class="feature">
-                <a href="#">
-                    <img src="images/leaf.png" class="hatch" width="150" height="150" alt="social">
-                    <p>Social</p>
+                <a href="<?php echo $array[$i][0] ?>">
+                    <img src="images/<?php echo $array[$i][1] ?>.png" class="hatch" width="150" height="150" alt="<?php echo $array[$i][1] ?>">
+                    <p><?php echo $array[$i][1] ?></p>
                 </a>
             </div>
-
-            <div class="feature">
-                <a href="#">
-                    <img src="images/flower.png" class="hatch" width="150" height="150" alt="shop">
-                    <p>Forum</p>
-                </a>
-            </div>
-
-            <div class="feature">
-                <a href="#">
-                    <img src="images/bee.png" class="hatch" width="150" height="150" alt="forum">
-                    <p>Store</p>
-                </a>
-            </div>
-
-            <div class="feature">
-                <a href="#">
-                    <img src="images/snowman.png" class="hatch" width="150" height="150" alt="support">
-                    <p>Support</p>
-                </a>
-            </div>
+            <?php } ?>
         </nav>
 
 

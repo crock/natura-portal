@@ -45,4 +45,18 @@ $ga_tracking_id = ""; // Please only enter the tracking ID, not the full code sn
  Portal Links
 
  This portal supports unlimited links.
+
+ To add and remove links, you do not need to edit ANY code.
+
+ Please open up the file portal_links.txt in your favorite text editor.
+
+ Then for each portal link you need, you add a line to the file in the 
+ following format:
+
+ URL,LINK_TITLE
+
+Don't forget the comma to separate the two values.
+
+ For the image, please include name the appropriate PNG file the same name
+ as the corresponding LINK_TITLE as that is how the script finds the right image.
 */
